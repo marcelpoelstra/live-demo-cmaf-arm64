@@ -38,7 +38,7 @@ This demo utilises software which is still in development and is therefore not i
 
 ## Build FFmpeg and Live Origin
 
-As this demonstration contains will generate the following stream configurations, so the Docker images need to be built locally.
+As this demonstration is aimed specifically at running on ARM64 systems (e.g. Apple MacBook M1), the official Docker images cannot be used and need to be built locally.
 
 This can be done by running the following command in the directory of this demo's Compose file:
 
@@ -47,7 +47,7 @@ This can be done by running the following command in the directory of this demo'
 docker-compose build ffmpeg-1 ffmpeg-2 live-origin
 ```
 
-Which will create a Docker image called livedemo_ffmpeg with the patch applied.
+Which will create 3 Docker images called livedemo_ffmpeg, and livedemo_live-origin
 
 
 ## Usage
