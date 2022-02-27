@@ -1,3 +1,9 @@
+# NOTE:  THIS IS AN UNOFFICIAL AND UNSUPPORTED (UBUNTU BASED) VERSION OF THE UNIFIED STREAMING LIVE-DEMO-CMAF DEMO SETUP ONLY COMPATIBLE WITH ARM64 BASED SYSTEMS
+
+
+
+
+
 ![Image](unifiedstreaming-logo-black.jpg?raw=true)
 # Unified Streaming Live Origin Demo <br/> DASH-IF Live Media Ingest Protocol - Interface 1 (CMAF)
 
@@ -30,15 +36,15 @@ This demo utilises software which is still in development and is therefore not i
 3. Download this demo's [Compose file](https://github.com/unifiedstreaming/live-demo/blob/master/docker-compose.yaml)
 
 
-## Build FFmpeg
+## Build FFmpeg and Live Origin
 
-As this demonstration contains will generate the following stream configurations, so the Docker image needs to be built locally.
+As this demonstration contains will generate the following stream configurations, so the Docker images need to be built locally.
 
 This can be done by running the following command in the directory of this demo's Compose file:
 
 ```bash
 #!/bin/sh
-docker-compose build ffmpeg-1 ffmpeg-2
+docker-compose build ffmpeg-1 ffmpeg-2 live-origin
 ```
 
 Which will create a Docker image called livedemo_ffmpeg with the patch applied.
